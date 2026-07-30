@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Summer Bar — Good food. Cold drinks. Long nights.</title>
+    <meta name="description" content="Summer Bar is your all-day neighborhood escape for bright plates, cold drinks and golden-hour energy.">
+    <meta name="theme-color" content="#f04b35">
+    <meta property="og:title" content="Summer Bar">
+    <meta property="og:description" content="Good food. Cold drinks. Long nights.">
+    <meta property="og:image" content="public/og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="nav">
+      <a class="logo" href="#top" aria-label="Summer Bar home">Summer <span>Bar</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our place</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <button class="bag-button" type="button" aria-label="Open your order">
+        <span>My order</span><b class="bag-count">0</b>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-sun" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Open daily · 11am till late</p>
+          <h1>Always tastes<br><em>like summer.</em></h1>
+          <p class="hero-intro">Bright plates, ice-cold drinks and the kind of nights you wish would never end.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#menu">Explore the menu <span>↘</span></a>
+            <a class="text-button" href="#visit">Find your table →</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="image-frame">
+            <img src="public/assets/atiri-food/avocado-shrimp-wrap.png" alt="Colorful avocado shrimp wrap at Summer Bar">
+          </div>
+          <div class="stamp" aria-label="Fresh all day">
+            <span>FRESH<br>ALL DAY</span>
+          </div>
+          <div class="hero-note">Made to share.<br>Too good to share.</div>
+        </div>
+        <div class="marquee" aria-label="Summer Bar highlights">
+          <div>COASTAL BITES ✦ FROZEN SIPS ✦ GOLDEN HOURS ✦ COASTAL BITES ✦ FROZEN SIPS ✦ GOLDEN HOURS ✦</div>
+        </div>
+      </section>
+
+      <section class="intro" id="story">
+        <p class="section-number">01 / OUR PLACE</p>
+        <div>
+          <h2>Come hungry.<br>Leave <em>sun-kissed.</em></h2>
+          <p>Summer Bar is a laid-back kitchen and bar where seasonal ingredients meet big, joyful flavor. No dress code, no fuss—just good people around a table.</p>
+        </div>
+        <div class="mini-photo">
+          <img src="public/assets/atiri-food/iced-matcha-strawberry.png" alt="Strawberry matcha drink">
+          <span>sip slow</span>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="menu-heading">
+          <div>
+            <p class="section-number">02 / EAT & DRINK</p>
+            <h2>Pick your<br><em>pleasure.</em></h2>
+          </div>
+          <p>Fresh from the kitchen, made for the table. Tap any item to start your order.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter the menu">
+          <button class="filter active" data-filter="all" type="button">All day</button>
+          <button class="filter" data-filter="plates" type="button">Big plates</button>
+          <button class="filter" data-filter="bites" type="button">Small bites</button>
+          <button class="filter" data-filter="drinks" type="button">Cool drinks</button>
+          <button class="filter" data-filter="sweet" type="button">Sweet things</button>
+        </div>
+
+        <div class="menu-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="golden-hour">
+        <div class="golden-copy">
+          <p class="eyebrow">Every day · 4—7pm</p>
+          <h2>Golden hour<br><em>hits different.</em></h2>
+          <p>Two drinks. One snack. Zero reason to rush.</p>
+          <a class="button button-light" href="#menu">See drink specials <span>↗</span></a>
+        </div>
+        <div class="golden-images">
+          <img class="tall" src="public/assets/atiri-food/iced-matcha-strawberry.png" alt="Iced strawberry matcha">
+          <img class="small" src="public/assets/atiri-food/chicken-wings.png" alt="Crispy chicken wings">
+          <span class="scribble">cheers!</span>
+        </div>
+      </section>
+
+      <section class="visit" id="visit">
+        <div>
+          <p class="section-number">03 / FIND US</p>
+          <h2>Your table is<br><em>waiting.</em></h2>
+        </div>
+        <div class="visit-details">
+          <div><span>Where</span><p>22 Sun Street<br>Beachside District</p></div>
+          <div><span>When</span><p>Sun—Thu 11am—11pm<br>Fri—Sat 11am—1am</p></div>
+          <a class="button button-dark" href="tel:+66838744818">Call for a table <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">Summer Bar</div>
+      <div class="footer-bottom">
+        <p>Good food. Cold drinks. Long nights.</p>
+        <div><a href="#">Instagram</a><a href="#">TikTok</a><a href="tel:+66838744818">Call us</a></div>
+        <span>© 2026 Summer Bar</span>
+      </div>
+    </footer>
+
+    <div class="order-overlay" aria-hidden="true">
+      <aside class="order-drawer" role="dialog" aria-modal="true" aria-labelledby="order-title">
+        <div class="order-head">
+          <div><p class="eyebrow">Your table</p><h2 id="order-title">My order</h2></div>
+          <button class="close-order" type="button" aria-label="Close order">×</button>
+        </div>
+        <div class="order-items"></div>
+        <p class="order-empty">Your order is waiting for something delicious.</p>
+        <div class="order-total"><span>Total</span><strong>THB 0</strong></div>
+        <button class="button button-dark send-order" type="button">Send order on WhatsApp <span>↗</span></button>
+      </aside>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
