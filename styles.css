@@ -60,7 +60,7 @@ h1 em, h2 em { color: var(--plum); font-style: normal; }
 .marquee div { width: max-content; animation: scroll 24s linear infinite; }
 @keyframes scroll { to { transform: translateX(-50%); } }
 
-.intro { display: grid; grid-template-columns: .4fr 1.1fr .45fr; gap: 50px; padding: 130px clamp(24px, 6vw, 90px); align-items: center; }
+.intro { display: grid; grid-template-columns: 1.1fr .45fr; gap: 50px; padding: 130px clamp(24px, 6vw, 90px); align-items: center; }
 .section-number { color: var(--coral); align-self: start; }
 .intro h2, .menu-heading h2, .visit h2 { font-size: clamp(3.6rem, 7vw, 7.5rem); }
 .intro > div:nth-child(2) > p { max-width: 610px; margin: 30px 0 0; font-size: 1.1rem; line-height: 1.7; }
@@ -141,7 +141,6 @@ footer { padding: 60px clamp(24px, 6vw, 90px) 28px; background: linear-gradient(
   .hero { grid-template-columns: 1fr; padding-top: 120px; }
   .hero-visual { min-height: 520px; }
   .intro { grid-template-columns: 1fr 1fr; }
-  .intro > .section-number { grid-column: 1 / -1; }
   .mini-photo { width: 75%; justify-self: end; }
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
   .golden-hour { grid-template-columns: 1fr; }
