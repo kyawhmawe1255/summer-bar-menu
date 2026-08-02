@@ -98,6 +98,7 @@ h1 em, h2 em { color: var(--plum); font-style: normal; }
 .event-list span { font-size: .88rem; line-height: 1.45; }
 .golden-images { position: relative; min-height: 690px; background: var(--ocean); }
 .golden-images .tall { position: absolute; width: 58%; height: 72%; left: 9%; top: 9%; object-fit: cover; border: 10px solid var(--cream); transform: rotate(-4deg); }
+.golden-images .pool-photo { object-position: center 24%; }
 .golden-images .small { position: absolute; width: 43%; aspect-ratio: 1; right: 5%; bottom: 7%; object-fit: cover; border: 9px solid var(--cream); transform: rotate(7deg); }
 .scribble { left: 2%; bottom: 9%; color: var(--plum); font-size: 2rem; }
 
