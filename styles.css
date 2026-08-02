@@ -107,6 +107,9 @@ h1 em, h2 em { color: var(--plum); font-style: normal; }
 .visit-details span { display: block; margin-bottom: 10px; color: var(--coral); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; }
 .visit-details p { margin: 0; line-height: 1.7; }
 .visit-details .button { grid-column: 1 / -1; width: 100%; margin-top: 12px; }
+.map-card { position: relative; grid-column: 1 / -1; height: min(58vw, 520px); min-height: 360px; margin-top: 10px; overflow: hidden; border: 8px solid var(--ink); background: var(--ocean); }
+.map-card iframe { width: 100%; height: 100%; border: 0; filter: saturate(.85) contrast(1.05); }
+.button-map { position: absolute; right: 18px; bottom: 18px; color: var(--ink); background: var(--lime); box-shadow: 7px 7px 0 var(--ink); }
 
 footer { padding: 60px clamp(24px, 6vw, 90px) 28px; background: linear-gradient(135deg, var(--coral), #ff8a22); color: var(--cream); }
 .footer-logo { font-size: clamp(4rem, 12vw, 12rem); line-height: 1; text-align: center; white-space: nowrap; }
@@ -173,6 +176,8 @@ footer { padding: 60px clamp(24px, 6vw, 90px) 28px; background: linear-gradient(
   .visit { padding: 90px 20px; gap: 50px; }
   .visit-details { grid-template-columns: 1fr; }
   .visit-details .button { grid-column: auto; }
+  .map-card { min-height: 340px; border-width: 5px; }
+  .button-map { right: 12px; bottom: 12px; left: 12px; }
   footer { padding-inline: 20px; }
   .footer-logo { font-size: 20vw; white-space: normal; }
   .footer-bottom { grid-template-columns: 1fr; text-align: center; }
